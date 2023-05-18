@@ -30,7 +30,7 @@ export default class extends Controller {
 
   insertMovies = (array) => {
     array.forEach(movie => {
-      const movieTag = `<li class="list-group-item rounded"><img src="${movie.Poster}" width="100"></li>`
+      const movieTag = `<li class="list-group-item border-0"><img src="${movie.Poster}" width="100"></li>`
       this.resultsTarget.insertAdjacentHTML('beforeend', movieTag)
     })
   }
